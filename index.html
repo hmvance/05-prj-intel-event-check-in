@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -37,6 +37,12 @@
     <div class="container">
       <!-- Feedback message -->
       <p id="greeting"></p>
+      <p
+        id="celebrationMessage"
+        class="success-message"
+        hidden
+        aria-live="polite"
+      ></p>
 
       <!-- Check-in form -->
       <form class="check-in" id="checkInForm">
@@ -81,6 +87,11 @@
           </div>
         </div>
       </div>
+
+      <section aria-labelledby="attendeeListHeading">
+        <h3 id="attendeeListHeading">Checked-In Attendees</h3>
+        <ul id="attendeeList"></ul>
+      </section>
     </div>
 
     <footer class="footer">
